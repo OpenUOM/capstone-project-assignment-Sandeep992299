@@ -67,7 +67,7 @@ jobs:
       with:
         test-name: Backend Add Student
         setup-command: npm install
-        command: npm test -- -t "POST /addStudent should show a newly added student"
+        command: npm test -- -t "POST /addTeacher should show a newly added teacher"
         timeout: 10
         max-score: 10
     - name: Backend Edit Student
@@ -76,7 +76,7 @@ jobs:
       with:
         test-name: Backend Edit Student
         setup-command: npm install
-        command: npm test -- -t "POST /editStudent should edit a Student"
+        command: npm test -- -t "POST /editTeacher should show a newly added teacher"
         timeout: 10
         max-score: 10
     - name: Backend Delete Student
@@ -102,7 +102,7 @@ jobs:
       with:
         test-name: Frontend Add Student
         setup-command: npm install
-        command: file=./test/student-add.test.js npm run test --prefix ./frontend
+        command: file=./test/teacher-add.test.js npm run test --prefix ./frontend
         timeout: 10
         max-score: 10
     - name: Frontend Delete Student
@@ -111,7 +111,7 @@ jobs:
       with:
         test-name: Frontend Delete Student
         setup-command: npm install
-        command: file=./test/student-delete.test.js npm run test --prefix ./frontend
+        command: file=./test/teacher-delete.test.js npm run test --prefix ./frontend
         timeout: 10
         max-score: 10
     - name: Frontend Edit Student
@@ -120,7 +120,7 @@ jobs:
       with:
         test-name: Frontend Edit Student
         setup-command: npm install
-        command: file=./test/student-edit.test.js npm run test --prefix ./frontend
+        command: file=./test/teacher-edit.test.js npm run test --prefix ./frontend
         timeout: 10
         max-score: 10
     - name: Frontend Search Student
