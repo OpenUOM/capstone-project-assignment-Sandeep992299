@@ -67,7 +67,7 @@ jobs:
       with:
         test-name: Backend Add Student
         setup-command: npm install
-        command: npm test -- -t "POST /addTeacher should show a newly added teacher"
+        command: npm test -- -t "POST /addStudent should show a newly added student"
         timeout: 10
         max-score: 10
     - name: Backend Edit Student
